@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: url("/Images/malte-schmidt-enGr5YbjQKQ-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+    background-position: center;
+    height: 100%;
+    /* Ensure full viewport height */
+    background-repeat: no-repeat;
+    /* Prevent background image from repeating */
+}
+
+.mainDiv {
+    border-radius: 15px;
+    backdrop-filter: blur(0.8px);
+    opacity: 0.7;
+    max-height: 200vh;
+    /* Restrict maximum height to viewport height */
+    overflow-y: auto;
+    /* Enable vertical scrolling if content exceeds viewport */
+}
+
+/*  code for Table */
+
+#mainContainer {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.resizable-table {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+
+.table,
+.table th,
+.table td {
+    border: 1px solid #949494;
+    filter: saturate(1.5) contrast(1.7);
+}
+
+.table th,
+.table td {
+    padding: 0.6rem;
+}
+
+.table th {
+    position: relative;
+    cursor: grab;
+    user-select: none;
+}
+
+.table th:active {
+    cursor: grabbing;
+}
+
+.resizer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    cursor: col-resize;
+    user-select: none;
+}
+
+.resizer:hover,
+.resizing {
+    border-right: 2px solid blue;
+}
+
+.dragging {
+    background-color: red;
+}
+
+#MainHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 12px 14px;
+    border-radius: 5px;
+    color: #fff;
+
+}
